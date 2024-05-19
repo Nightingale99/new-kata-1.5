@@ -86,7 +86,7 @@ h1,h2,h3{
   align-items: center;
 }
 
-.topic__show-all span:hover {
+.topic__show-all:hover {
   text-decoration: underline;
   cursor: pointer;
 }
