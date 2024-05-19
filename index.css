@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "TTLakesRegular";
+  src: url(./resources/fonts/TTLakes-Regular.ttf);
+}
+
+@font-face {
+  font-family: "TTLakesMedium";
+  src: url(./resources/fonts/TTLakes-Medium.ttf);
+}
+
+body,html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #F8F8F8;
+}
+
+h1,h2,h3{
+  padding: 0;
+  margin: 0;
+}
+
+.swiper {
+  width: 306px;
+  height: 100px;
+  margin-left: auto;
+  margin-top: 16px;
+}
+
+.topic-header {
+  padding: 16px;
+  padding-left: 5%;
+  background-color: #FFF;
+}
+
+.topic-header__title {
+  font-family: "TTLakesRegular", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #7E7E82;
+  word-break: normal;
+}
+
+.brands-block__brand-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid #EAEAEA;
+  background-color: #FFF;
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: 240px;
+  height: 72px;
+}
+
+.brands-block__go-button{
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #B5B6BC;
+}
+
+.swiper-pagination-bullet{
+  background-color: #DDDDDD;
+  width: 12px;
+  height: 12px;
+}
+
+.topic__show-all{
+  margin-top: 20px;
+  color: #1B1C21;
+  border: none;
+  background-color: transparent;
+  font-family: "TTLakesMedium", sans-serif;
+  font-size: 16px;
+  margin-left: calc(5% + 33px);
+}
+
+.topic__show-all{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.topic__show-all span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.topic__show-all::before {
+  content: '';
+  transition: 1s;
+  background-image: url(./resources/show-more.svg);
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  left: -33px;
+  top: 0;
+}
+
+.topic__show-all--active::before {
+  transform: rotate(180deg);
+  transition: 1s;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block !important;
+}
+
+@media (width < 768px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+@media (width > 767px) {
+  .swiper {
+    width: 93.7%;
+    height: 100%;
+    overflow: visible;
+    box-sizing: border-box;
+    margin-top: 24px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-row-gap: 16px;
+  }
+
+  .swiper-slide {
+    width: 224px;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1120px){
+  .tablet-hidden{
+    display: none;
+  }
+}
