@@ -51,7 +51,6 @@ window.addEventListener('resize', function(event) {
 const showAll = document.querySelector('.topic__show-all');
 showAll.addEventListener('click', (event) => {
   hiddens = document.querySelectorAll('.hidden, .tablet-hidden');
-  console.log(hiddens);
   if(hiddens[0].classList.contains('visible')){
     hiddens.forEach(element => {
       element.classList.remove('visible');

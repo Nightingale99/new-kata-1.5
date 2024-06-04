@@ -15,7 +15,7 @@ body,html{
   background-color: #F8F8F8;
 }
 
-h1,h2,h3{
+.brands-block__title{
   padding: 0;
   margin: 0;
 }
@@ -27,13 +27,13 @@ h1,h2,h3{
   margin-top: 16px;
 }
 
-.topic-header {
+.brands-block__header {
   padding: 16px;
   padding-left: 5%;
   background-color: #FFF;
 }
 
-.topic-header__title {
+.brands-block__title {
   font-family: "TTLakesRegular", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
@@ -53,11 +53,21 @@ h1,h2,h3{
   box-sizing: border-box;
   width: 240px;
   height: 72px;
+  animation: fadeIn 1s alternate;
 }
 
 .brands-block__go-button{
+  transition: 0.3s;
+  padding: 0;
+  border: none;
+  background-color: transparent;
   width: 40px;
   height: 40px;
+}
+
+.brands-block__go-button:hover {
+  transform: rotate(180deg) scale(1.1);
+  cursor: pointer;
 }
 
 .swiper-pagination-bullet-active{
@@ -81,13 +91,15 @@ h1,h2,h3{
 }
 
 .topic__show-all{
+  transition: 0.3s;
   position: relative;
   display: flex;
   align-items: center;
 }
 
 .topic__show-all:hover {
-  text-decoration: underline;
+  transform: scale(1.1);
+  color:#41F6D7; 
   cursor: pointer;
 }
 
@@ -151,5 +163,15 @@ h1,h2,h3{
 @media (min-width: 767px) and (max-width: 1120px){
   .tablet-hidden{
     display: none;
+  }
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%
   }
 }
