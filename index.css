@@ -86,7 +86,7 @@ body,html{
   height: 12px;
 }
 
-.topic__show-all{
+.brands-block__show-all{
   margin-top: 20px;
   color: #1B1C21;
   border: none;
@@ -94,22 +94,19 @@ body,html{
   font-family: "TTLakesMedium", sans-serif;
   font-size: 16px;
   margin-left: calc(5% + 33px);
-}
-
-.topic__show-all{
   transition: 0.3s;
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.topic__show-all:hover {
+.brands-block__show-all:hover {
   transform: scale(1.1);
   color:#41F6D7; 
   cursor: pointer;
 }
 
-.topic__show-all::before {
+.brands-block__show-all::before {
   content: '';
   transition: 1s;
   background-image: url(./resources/show-more.svg);
@@ -121,7 +118,7 @@ body,html{
   top: 0;
 }
 
-.topic__show-all--active::before {
+.brands-block__show-all--active::before {
   transform: rotate(180deg);
   transition: 1s;
 }

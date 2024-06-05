@@ -48,7 +48,7 @@ window.addEventListener('resize', function(event) {
   }
 }, true);
 
-const showAll = document.querySelector('.topic__show-all');
+const showAll = document.querySelector('.brands-block__show-all');
 showAll.addEventListener('click', (event) => {
   hiddens = document.querySelectorAll('.hidden, .tablet-hidden');
   if(hiddens[0].classList.contains('visible')){
@@ -56,12 +56,12 @@ showAll.addEventListener('click', (event) => {
       element.classList.remove('visible');
     });
     showAll.textContent = 'Показать все';
-    showAll.classList.remove('topic__show-all--active');
+    showAll.classList.remove('brands-block__show-all--active');
   }else{
     hiddens.forEach(element => {
       element.className += ' visible';
     });
     showAll.textContent = 'Скрыть';
-    showAll.className += ' topic__show-all--active'
+    showAll.className += ' brands-block__show-all--active'
   }
 })
