@@ -2,18 +2,17 @@ let swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-
+  
   pagination: {
     el: '.swiper-pagination',
   },
 
   autoplay: {
     delay: 3000, 
-    disableOnInteraction: true, 
-  },
-
-  slidesPerView: 1.5, // Количество видимых слайдов
-  spaceBetween: 72,
+    disableOnInteraction: true,
+  },  
+  slidesPerView: 1.5,
+  spaceBetween: 16,
 });
 
 
@@ -42,13 +41,12 @@ window.addEventListener('resize', function(event) {
       },
     
       slidesPerView: 1.5, // Количество видимых слайдов
-      spaceBetween: 72,
-      init: true,
+      spaceBetween: 16,
     });
   }
 }, true);
 
-const showAll = document.querySelector('.brands-block__show-all');
+const showAll = document.querySelector('.brands__show-all');
 showAll.addEventListener('click', (event) => {
   hiddens = document.querySelectorAll('.hidden, .tablet-hidden');
   if(hiddens[0].classList.contains('visible')){
@@ -56,12 +54,12 @@ showAll.addEventListener('click', (event) => {
       element.classList.remove('visible');
     });
     showAll.textContent = 'Показать все';
-    showAll.classList.remove('brands-block__show-all--active');
+    showAll.classList.remove('brands__show-all--active');
   }else{
     hiddens.forEach(element => {
       element.className += ' visible';
     });
     showAll.textContent = 'Скрыть';
-    showAll.className += ' brands-block__show-all--active'
+    showAll.className += ' brands__show-all--active'
   }
 })

@@ -16,30 +16,35 @@ body,html{
 }
 
 /* Вместо этого в финальной работе позже будет использоваться это */
-/* .brands-block {
+/* .brands {
   background-color: #F8F8F8;
 } */
 
-.brands-block__title{
+.section-title{
   padding: 0;
   margin: 0;
 }
 
+.swiper-wrapper{
+  padding-left: 0;
+}
+
 .swiper {
-  width: 306px;
-  height: 100px;
-  margin-left: auto;
+  width: 95%;
+  height: 130px;
+  margin-left: 5%;
   margin-top: 16px;
 }
 
-.brands-block__header {
+.brands__header {
   padding: 16px;
   padding-left: 5%;
-  background-color: #FFF;
+  background: linear-gradient(#F8F8F8, #FFFFFF);
   width: 100%;
 }
 
-.brands-block__title {
+
+.section-title {
   font-family: "TTLakesRegular", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
@@ -47,7 +52,7 @@ body,html{
   word-break: normal;
 }
 
-.brands-block__brand-card{
+.brands__brand-card{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,7 +67,7 @@ body,html{
   animation: fadeIn 1s alternate;
 }
 
-.brands-block__go-button{
+.brands__go-button{
   transition: 0.3s;
   padding: 0;
   border: none;
@@ -71,7 +76,7 @@ body,html{
   height: 40px;
 }
 
-.brands-block__go-button:hover {
+.brands__go-button:hover {
   transform: rotate(180deg) scale(1.1);
   cursor: pointer;
 }
@@ -86,7 +91,7 @@ body,html{
   height: 12px;
 }
 
-.brands-block__show-all{
+.brands__show-all{
   margin-top: 20px;
   color: #1B1C21;
   border: none;
@@ -100,13 +105,13 @@ body,html{
   align-items: center;
 }
 
-.brands-block__show-all:hover {
+.brands__show-all:hover {
   transform: scale(1.1);
   color:#41F6D7; 
   cursor: pointer;
 }
 
-.brands-block__show-all::before {
+.brands__show-all::before {
   content: '';
   transition: 1s;
   background-image: url(./resources/show-more.svg);
@@ -118,7 +123,7 @@ body,html{
   top: 0;
 }
 
-.brands-block__show-all--active::before {
+.brands__show-all--active::before {
   transform: rotate(180deg);
   transition: 1s;
 }
@@ -132,7 +137,7 @@ body,html{
 }
 
 @media (width < 768px) {
-  .mobile-hidden {
+  .brands__show-all{
     display: none;
   }
 }

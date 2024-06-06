@@ -1,102 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./index.css">
   <title>Kata 1.5</title>
 </head>
 <body>
-  <section class="brands-block">
-    <header class="brands-block__header">
-      <h3 class="brands-block__title">
+  <section class="brands">
+    <header class="brands__header">
+      <h3 class="section-title">
         Ремонт техники различных брендов
       </h3>
     </header>
-    <main class="brands-block__main">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="brands-block__brand-card">
-              <img src="./resources/lenovo.svg" alt="lenovo">
-              <button class="brands-block__go-button"><img src="./resources/go.svg" alt="go"></button>
-            </div>
+    <div class="swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <div class="brands__brand-card">
+            <img src="./resources/lenovo.svg" alt="lenovo">
+            <button class="brands__go-button"><img src="./resources/go.svg" alt="go"></button>
           </div>
-          <div class="swiper-slide">
-            <div class="brands-block__brand-card">
-              <img src="./resources/samsung.svg" alt="samsung">
-              <button class="brands-block__go-button"><img src="./resources/go.svg" alt="go"></button>
-            </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="brands__brand-card">
+            <img src="./resources/samsung.svg" alt="samsung">
+            <button class="brands__go-button"><img src="./resources/go.svg" alt="go"></button>
           </div>
-          <div class="swiper-slide">
-            <div class="brands-block__brand-card">
-              <img src="./resources/apple.svg" alt="apple">
-              <button  class="brands-block__go-button"><img src="./resources/go.svg" alt="go"></button>
-            </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="brands__brand-card">
+            <img src="./resources/apple.svg" alt="apple">
+            <button  class="brands__go-button"><img src="./resources/go.svg" alt="go"></button>
           </div>
-          <div class="swiper-slide tablet-hidden">
-            <div class="brands-block__brand-card">
-              <img src="./resources/viewsonic.svg" alt="viewsonic">
-              <button  class="brands-block__go-button"><img src="./resources/go.svg" alt="go"></button>
-            </div>
+        </li>
+        <li class="swiper-slide tablet-hidden">
+          <div class="brands__brand-card">
+            <img src="./resources/viewsonic.svg" alt="viewsonic">
+            <button  class="brands__go-button"><img src="./resources/go.svg" alt="go"></button>
           </div>
-          <div class="swiper-slide">
-            <div class="brands-block__brand-card">
-              <img src="./resources/bosch.svg" alt="bosch">
-              <button  class="brands-block__go-button"><img src="./resources/go.svg" alt="go"></button>
-            </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="brands__brand-card">
+            <img src="./resources/bosch.svg" alt="bosch">
+            <button  class="brands__go-button"><img src="./resources/go.svg" alt="go"></button>
           </div>
-          <div class="swiper-slide">
-            <div class="brands-block__brand-card">
-              <img src="./resources/hp.svg" alt="hp">
-              <button  class="brands-block__go-button"><img src="./resources/go.svg" alt="go"></button>
-            </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="brands__brand-card">
+            <img src="./resources/hp.svg" alt="hp">
+            <button  class="brands__go-button"><img src="./resources/go.svg" alt="go"></button>
           </div>
-          <div class="swiper-slide">
-            <div class="brands-block__brand-card">
-              <img src="./resources/acer.svg" alt="acer">
-              <button  class="brands-block__go-button"><img src="./resources/go.svg" alt="go"></button>
-            </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="brands__brand-card">
+            <img src="./resources/acer.svg" alt="acer">
+            <button  class="brands__go-button"><img src="./resources/go.svg" alt="go"></button>
           </div>
-          <div class="swiper-slide tablet-hidden">
-            <div class="brands-block__brand-card">
-              <img src="./resources/sony.svg" alt="sony">
-              <button  class="brands-block__go-button"><img src="./resources/go.svg" alt="go"></button>
-            </div>
+        </li>
+        <li class="swiper-slide tablet-hidden">
+          <div class="brands__brand-card">
+            <img src="./resources/sony.svg" alt="sony">
+            <button  class="brands__go-button"><img src="./resources/go.svg" alt="go"></button>
           </div>
-          <div class="swiper-slide hidden">
-            <div class="brands-block__brand-card">
-              <img src="./resources/lenovo.svg" alt="lenovo">
-              <button  class="brands-block__go-button"><img src="./resources/go.svg" alt="go"></button>
-            </div>
+        </li>
+        <li class="swiper-slide hidden">
+          <div class="brands__brand-card">
+            <img src="./resources/lenovo.svg" alt="lenovo">
+            <button  class="brands__go-button"><img src="./resources/go.svg" alt="go"></button>
           </div>
-          <div class="swiper-slide hidden">
-            <div class="brands-block__brand-card">
-              <img src="./resources/samsung.svg" alt="samsung">
-              <button  class="brands-block__go-button"><img src="./resources/go.svg" alt="go"></button>
-            </div>
+        </li>
+        <li class="swiper-slide hidden">
+          <div class="brands__brand-card">
+            <img src="./resources/samsung.svg" alt="samsung">
+            <button  class="brands__go-button"><img src="./resources/go.svg" alt="go"></button>
           </div>
-          <div class="swiper-slide hidden">
-            <div class="brands-block__brand-card">
-              <img src="./resources/apple.svg" alt="apple">
-              <button  class="brands-block__go-button"><img src="./resources/go.svg" alt="go"></button>
-            </div>
+        </li>
+        <li class="swiper-slide hidden">
+          <div class="brands__brand-card">
+            <img src="./resources/apple.svg" alt="apple">
+            <button  class="brands__go-button"><img src="./resources/go.svg" alt="go"></button>
           </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <button class="brands-block__show-all mobile-hidden">
-        <span>Показать все</span>
-      </button>
-    </main>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+    <button class="brands__show-all">
+      <span>Показать все</span>
+    </button>
   </section>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./index.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="./index.js"></script>
 </html>
