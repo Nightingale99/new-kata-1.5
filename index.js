@@ -12,7 +12,7 @@ let swiper = new Swiper('.swiper', {
     disableOnInteraction: true,
   },  
   slidesPerView: 1.5,
-  spaceBetween: 16,
+  spaceBetween: 75,
 });
 
 
