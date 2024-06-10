@@ -11,8 +11,8 @@ let swiper = new Swiper('.swiper', {
     delay: 3000, 
     disableOnInteraction: true,
   },  
-  slidesPerView: 1.5,
-  spaceBetween: 75,
+  slidesPerView: 'auto',
+  spaceBetween: 35,
 });
 
 
@@ -40,8 +40,8 @@ window.addEventListener('resize', function(event) {
         disableOnInteraction: true, 
       },
     
-      slidesPerView: 1.5, // Количество видимых слайдов
-      spaceBetween: 16,
+      slidesPerView: 'auto', // Количество видимых слайдов
+      spaceBetween: 35,
     });
   }
 }, true);
